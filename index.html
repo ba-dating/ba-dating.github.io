@@ -1,0 +1,135 @@
+<html><head><base href="https://fourpillarsmatch.com/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Four Pillars Destiny Match</title><style>
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: #f0e6d2;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #8b4513;
+    margin-bottom: 1.5rem;
+}
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #8b4513;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    margin: 1rem 0;
+}
+.cta-button:hover {
+    background-color: #a0522d;
+    transform: translateY(-2px);
+}
+.pillars {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.pillar {
+    text-align: center;
+    width: 20%;
+}
+.pillar-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: #8b4513;
+    color: #fff;
+}
+</style></head><body>
+<div class="container">
+    <h1>Four Pillars Destiny Match</h1>
+    <p>Welcome to Four Pillars Destiny Match, where ancient wisdom meets modern love! We use the profound insights of the Four Pillars of Destiny (四柱命理) to help you find your perfect match.</p>
+    <div class="pillars">
+        <div class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 100 100">
+                <rect x="10" y="10" width="80" height="80" fill="#8b4513"/>
+                <text x="50" y="60" font-size="40" text-anchor="middle" fill="#fff">年</text>
+            </svg>
+            <p>Year</p>
+        </div>
+        <div class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 100 100">
+                <rect x="10" y="10" width="80" height="80" fill="#8b4513"/>
+                <text x="50" y="60" font-size="40" text-anchor="middle" fill="#fff">月</text>
+            </svg>
+            <p>Month</p>
+        </div>
+        <div class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 100 100">
+                <rect x="10" y="10" width="80" height="80" fill="#8b4513"/>
+                <text x="50" y="60" font-size="40" text-anchor="middle" fill="#fff">日</text>
+            </svg>
+            <p>Day</p>
+        </div>
+        <div class="pillar">
+            <svg class="pillar-icon" viewBox="0 0 100 100">
+                <rect x="10" y="10" width="80" height="80" fill="#8b4513"/>
+                <text x="50" y="60" font-size="40" text-anchor="middle" fill="#fff">時</text>
+            </svg>
+            <p>Hour</p>
+        </div>
+    </div>
+    <p>The Four Pillars of Destiny, also known as BaZi (八字), is an ancient Chinese astrological concept that uses your birth date and time to reveal your destiny. By analyzing the intricate relationships between the five elements and the twelve animals of the Chinese zodiac present at your birth, we can gain deep insights into your personality, strengths, and potential life path.</p>
+    <p>Our unique matching algorithm takes into account all four pillars - year, month, day, and hour of birth - to find matches that are truly compatible with you on a fundamental level. We believe that when the elements and energies align, so do hearts and minds.</p>
+    <a href="https://forms.gle/FourPillarsMatchForm" class="cta-button">Complete Your Four Pillars Profile</a>
+    <p>Ready to discover your destined match? Click the button above to fill out our comprehensive Google Form. We'll use this information to calculate your Four Pillars chart and begin the journey of finding your perfect partner.</p>
+    <p>If you have any questions about the Four Pillars of Destiny, our matching process, or need assistance, please don't hesitate to contact our administrator at <a href="mailto:admin@fourpillarsmatch.com">admin@fourpillarsmatch.com</a>.</p>
+</div>
+<footer>
+    &copy; 2023 Four Pillars Destiny Match. All rights reserved. May your pillars align with destiny.
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const ctaButton = document.querySelector('.cta-button');
+    
+    ctaButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const formUrl = e.target.href;
+        window.open(formUrl, '_blank', 'width=600,height=800');
+    });
+
+    const pillars = document.querySelectorAll('.pillar');
+    
+    pillars.forEach(pillar => {
+        pillar.addEventListener('mouseover', () => {
+            pillar.style.transform = 'scale(1.1)';
+            pillar.style.transition = 'transform 0.3s ease';
+        });
+        
+        pillar.addEventListener('mouseout', () => {
+            pillar.style.transform = 'scale(1)';
+        });
+    });
+});
+</script>
+</body></html>
